@@ -15,11 +15,11 @@
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="cuerpo">
 
     <!-- HEADER -->
     <header>
-        <h1 class="titulo">Emanuel Correa Jimenez</h1>
+        <h1 class="titulo principal">Emanuel Correa Jimenez</h1>
 
         <!-- NAV -->
         <nav>
@@ -36,40 +36,45 @@
     <!-- MAIN -->
     <main>
 
-        <!-- HERO -->
-        <section id="hero">
-            <h2 class="titulo">Bienvenido a mi Portafolio</h2>
-            <p>Desarrollador Web en formación.</p>
-        </section>
+        <!-- Bloque principal: Hero + Sobre mí + Habilidades -->
+        <div class="bloque">
 
-        <!-- SOBRE MI -->
-        <section id="sobre-mi">
-            <h2 class="titulo">Sobre mí</h2>
+            <!-- HERO -->
+            <section class="contenedor-flex" id="hero">
+                <h2 class="titulo">Bienvenido a mi Portafolio</h2>
+                <p>Desarrollador Web en formación.</p>
+            </section>
 
-            <figure>
-                <img src="img/foto-perfil.jpg" alt="Foto de perfil" width="200">
-                <figcaption>Foto profesional</figcaption>
-            </figure>
+            <!-- SOBRE MI -->
+            <section class="contenedor-flex" id="sobre-mi">
+                <h2 class="titulo">Sobre mí</h2>
 
-            <p>Soy un estudiante en formación en desarrollo de aplicaciones de software con experiencia en varios lenguajes de programación. 
-Tengo 19 años, tengo buena organización y trabajo en equipo. 
-Siempre he sido una persona creativa y con mucha curiosidad por aprender nuevas habilidades.</p>
-        </section>
+                <figure>
+                    <img src="img/foto-perfil.jpg" alt="Foto de perfil" width="200">
+                    <figcaption>Foto profesional</figcaption>
+                </figure>
 
-        <!-- HABILIDADES -->
-        <section id="habilidades">
-            <h2 class="titulo">Habilidades</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
+                <p>Soy un estudiante en formación en desarrollo de aplicaciones de software con experiencia en varios lenguajes de programación. 
+                Tengo 19 años, tengo buena organización y experiencia trabajando en equipo en proyectos programados. 
+                Siempre he sido una persona creativa y con mucha curiosidad por aprender nuevas habilidades.</p>
+            </section>
+
+            <!-- HABILIDADES -->
+            <section class="contenedor-flex" id="habilidades">
+                <h2 class="titulo">Habilidades</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+        </div>
 
         <!-- PROYECTOS -->
-        <section id="proyectos">
+        <section class="seccion" id="proyectos">
             <h2 class="titulo">Proyectos</h2>
 
             <article>
@@ -81,15 +86,18 @@ Siempre he sido una persona creativa y con mucha curiosidad por aprender nuevas 
                 <h3>Proyecto 2</h3>
                 <p>Descripción breve del proyecto.</p>
             </article>
-          <article>
+
+            <article>
                 <h3>Proyecto 3</h3>
                 <p>Descripción breve del proyecto.</p>
             </article>
-          <article>
+
+            <article>
                 <h3>Proyecto 4</h3>
                 <p>Descripción breve del proyecto.</p>
             </article>
-          <article>
+
+            <article>
                 <h3>Proyecto 5</h3>
                 <p>Descripción breve del proyecto.</p>
             </article>
@@ -97,22 +105,18 @@ Siempre he sido una persona creativa y con mucha curiosidad por aprender nuevas 
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto">
+        <section class="seccion" id="contacto">
             <h2 class="titulo">Contacto:</h2>
             <p>Email: emac6940@gmail.com</p>
+            <h3 class="titulo">Información adicional</h3>
+            <p>Datos complementarios o enlaces externos.</p>
         </section>
 
     </main>
 
-    <!-- ASIDE (Opcional) -->
-    <aside>
-        <h3 class="titulo">Información adicional</h3>
-        <p>Datos complementarios o enlaces externos.</p>
-    </aside>
-
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Tu Nombre. Todos los derechos reservados:</p>
+        <p>&copy; 2026 Emanuel. Todos los derechos reservados:</p>
         <p>
             <a href="#">LinkedIn</a> |
             <a href="#">GitHub</a>
@@ -120,8 +124,7 @@ Siempre he sido una persona creativa y con mucha curiosidad por aprender nuevas 
     </footer>
 
 </body>
-</html>         
-
+</html>
 
 
 

@@ -1,10 +1,155 @@
-.titulo{
+/* FUENTES Y TITULOS */
+.titulo { 
   font-family: 'Poppins', sans-serif;
-  
+  color: #DE66FA;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-.apartados{
-  background-color: gray;
-  width: 100px;
-  position: relative;
-}         
+.principal{
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* NAV */
+.apartados {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.apartados a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.apartados a:hover {
+  background-color: #DE66FA;
+  transform: scale(1.1);
+}
+
+/* BODY Y FONDOS */
+.cuerpo {
+  background: linear-gradient(to bottom, #39304a, #2b1f3a);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+section {
+  background-color: #4b3f66;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* BLOQUES FLEX */
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+}
+
+.contenedor-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+/* IMÁGENES */
+figure img {
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+
+article img {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+
+/* BOTONES */
+.button {
+  display: inline-block;
+  background-color: #DE66FA;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #b348d1;
+  transform: scale(1.05);
+}
+
+/* LISTAS */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: #fff;
+}
+
+#proyectos {
+    width: 1000px;
+    max-height: 400px;       /* Altura máxima de la sección */
+    overflow-y: auto;        /* Activar scroll vertical si el contenido sobrepasa */
+    padding: 15px;
+    background-color: #4b3f66;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+ 
+/* Scroll vertical para #proyectos */
+#proyectos::-webkit-scrollbar {
+    width: 10px;              /* grosor de la barra */
+    border-radius: 10px;
+}
+
+#proyectos::-webkit-scrollbar-track {
+    background: #2b1f3a;      /* fondo del track */
+    border-radius: 10px;
+}
+
+#proyectos::-webkit-scrollbar-thumb {
+    background-color: #DE66FA;  /* color del "pulgar" */
+    border-radius: 10px;
+    border: 2px solid #4b3f66; /* pequeño borde para que no quede pegado */
+}
+
+#proyectos::-webkit-scrollbar-thumb:hover {
+    background-color: #b348d1; /* color al pasar el mouse */
+}
+
+#habilidades{
+  
+}       
