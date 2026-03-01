@@ -1,0 +1,10 @@
+.titulo{
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.apartados{
+  background-color: gray;
+  width: 100px;
+  position: relative;
+}
