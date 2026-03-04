@@ -24,9 +24,6 @@ html {
   width: 45%  
 }
 
-
-
-
 body {
   line-height: 1.6;
   letter-spacing: 0.5px;
@@ -164,9 +161,6 @@ article img {
   margin-bottom: 10px;
 }
 
-
-
-
 /* BOTONES */
 .button {
   display: inline-block;
@@ -185,19 +179,16 @@ article img {
 }
 
 /* PROYECTOS */
-/* Proyectos estilo toggle/mini-tab */
 .proyectos-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Ocultar checkboxes */
 .toggle-proyecto {
     display: none;
 }
 
-/* Labels estilo botones tipo header */
 .proyecto-label {
     background-color: #000000;
     color: #fff;
@@ -213,18 +204,15 @@ article img {
 #proy1 + .proyecto-label:hover {
   background-color:  #E83333;
   border: 2px solid  #E83333;
-  
 }
 #proy2 + .proyecto-label:hover {
   background-color: #A633E8;
   border: 2px solid #A633E8;
 }
-
 #proy3 + .proyecto-label:hover {
   background-color: #E8C733;
   border: 2px solid #E8C733;
 }
-
 #proy4 + .proyecto-label:hover {
   background-color: #33E848;
   border: 2px solid #33E848;
@@ -234,9 +222,6 @@ article img {
   margin: 0 auto;
 }
 
-
-
-/* Contenido oculto por defecto */
 .proyecto-contenido {
     max-height: 0;
     overflow: hidden;
@@ -252,14 +237,12 @@ article img {
     gap: 10px;
 }
 
-/* Mostrar contenido al marcar checkbox */
 .toggle-proyecto:checked + .proyecto-label + .proyecto-contenido {
-    max-height: 400px; /* ajustable según contenido */
+    max-height: 400px;
     opacity: 1;
     padding: 20px;
 }
 
-/* Imagen miniatura */
 .proyecto-contenido img {
     width: 100%;
     max-width: 250px;
@@ -270,16 +253,13 @@ article img {
 .proyecto-contenido img:hover {
     transform: scale(1.20);
     border: 2px solid #DE66FA;
-    
 }
 
-/* Párrafo */
 .proyecto-contenido p {
     text-align: center;
     color: #fff;
 }
 
-/* Responsive */
 @media (min-width: 768px) {
     .proyectos-container {
         flex-direction: row;
@@ -329,19 +309,28 @@ article img {
 
 /* FOOTER */
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   text-align: center;
   margin-top: 30px;
   padding: 20px;
   color: #fff;
 }
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
-/* RESPONSIVE - MOBILE FIRST */
-/* ========================= */
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+}
 
-/* Móvil: estilos base */
+/* RESPONSIVE */
+
 body {
   font-size: 16px;
 }
@@ -352,7 +341,7 @@ header {
 }
 
 .bloque {
-  flex-direction: column; /* vertical por defecto */
+  flex-direction: column;
   gap: 30px;
   padding: 15px;
 }
@@ -371,17 +360,13 @@ header {
   gap: 10px;
 }
 
-/* ========================= */
-/* TABLET - 768px a 1023px */
-/* ========================= */
 @media (min-width: 768px) and (max-width: 1023px) {
-
   body {
     font-size: 17px;
   }
 
   .bloque {
-    flex-direction: column; /* seguimos verticales */
+    flex-direction: column;
     gap: 35px;
     padding: 20px;
   }
@@ -392,7 +377,7 @@ header {
 
   #proyectos {
     width: 80%;
-    flex-direction: column; /* proyectos siguen en columna */
+    flex-direction: column;
   }
 
   #habilidades ul {
@@ -400,62 +385,6 @@ header {
   }
 }
 
-/* ========================= */
-/* DESKTOP - 1024px a 1439px */
-/* ========================= */
-body {
-  font-size: 16px;
-}
-
-.bloque {
-  flex-direction: column;
-  align-items: center;
-}
-
-.contenedor-flex {
-  width: 90%;
-  text-align: center;
-}
-
-/* PROYECTOS */
-#proyectos {
-  flex-direction: column;
-  gap: 20px;
-  width: 90%;
-}
-
-/* ========================= */
-/* TABLET: 768px - 1023px */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .bloque {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .contenedor-flex {
-    width: 45%;
-    text-align: left;
-  }
-
-  #proyectos {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #proyectos article {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-
-  body {
-    font-size: 17px;
-  }
-}
-
-/* ========================= */
-/* DESKTOP: 1024px - 1439px */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .bloque {
     gap: 40px;
@@ -469,18 +398,11 @@ body {
     gap: 30px;
   }
 
-  #proyectos article {
-    flex: 1 1 30%;
-    max-width: 30%;
-  }
-
   body {
     font-size: 18px;
   }
 }
 
-/* ========================= */
-/* DESKTOP GRANDE: 1440px + */
 @media (min-width: 1440px) {
   main {
     max-width: 1300px;
@@ -495,13 +417,7 @@ body {
     width: 30%;
   }
 
-  #proyectos article {
-    flex: 1 1 22%;
-    max-width: 22%;
-  }
-
   body {
     font-size: 19px;
   }
 }
-
